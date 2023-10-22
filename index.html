@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta content="IE-edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, intial-scale=1.0" name="viewport">
+  <!--font awesome import for iconography-->
   <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
   <title>Personal Webpage</title>
+  <!--stylesheet reference-->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -30,8 +32,7 @@
     <ul class="menu">
       <li><a href="#main">Home</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="#introduction">About Me</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -40,18 +41,19 @@
 
   </nav>
 
+  <!--splash page-->
   <section id="main">
-    <!--text-->
+    <!--splash text-->
     <div class="main-text">
       <h1>Arthur Yagmur Eff</h1>
-      <p class="bio">About me, yadda yadda</p>
+      <p class="bio">Tagline</p>
       <!--buttons-->
       <div class="main-btns">
         <a href="#" class="download-cv-btn">Download CV</a>
         <a href="#" class="hire-me-btn">Hire Me</a>
       </div>
     </div>
-    <!--background image-->
+    <!--profile background-->
     <div class="model-bg">
       <img data-aos="fade" data-aos-duration="3000" src="img/model-bg.png" />
     </div>
@@ -61,29 +63,105 @@
     </div>
   </section>
 
-<!--
-  <div class="wrapper">
-
-     
-    <div class="header">
-      <img class="profile-picture" src="img/SBAvi2.png" width="150">
-      <h1 class="name"> Arthur Yagmur Eff</h1>
-      <h4 class="sub-1"> MS, Finance, Middle Tennessee State University <a href="https://mtsu.edu">(link)</a></h4>
-      <h4 class="sub-2"> BS, Computer Science, Case Western Reserve University <a href="https://case.edu">(link)</a>
-      </h4>
+  <!--skills page-->
+  <section id="skills">
+    <!--skills text section-->
+    <div class="skills-text">
+      <!--skills heading-->
+      <div class="skill-heading" data-aos="fade">
+        <span>My Skills</span>
+        <h5>For a full list, please see my resume.</h5>
+      </div>
+      <!--skills box container-->
+      <div class="s-box-container">
+        <!--skill box-->
+        <div class="skill-box" data-aos="fade-up">
+          <!--box icon-->
+          <div class="s-box-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <!--box text-->
+          <div class="s-box-text">
+            <strong>Java</strong>
+            <p>Language 1 achievements</p>
+          </div>
+        </div>
+        <!--skill box-->
+        <div class="skill-box" data-aos="fade-up">
+          <!--box icon-->
+          <div class="s-box-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <!--box text-->
+          <div class="s-box-text">
+            <strong>SQL</strong>
+            <p>Language 2 achievements</p>
+          </div>
+        </div>
+        <!--skill box-->
+        <div class="skill-box" data-aos="fade-up">
+          <!--box icon-->
+          <div class="s-box-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <!--box text-->
+          <div class="s-box-text">
+            <strong>Python</strong>
+            <p>Language 3 achievements</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-    <div class="right">
+    <!--skill images-->
+    <div class="skill-img">
+      <img data-aos="fade" src="images/skill2.png" />
+    </div>
+  </section>
+
+  <!--"about me" page-->
+  <section id="introduction">
+    <!--heading---->
+    <div class="intro-heading" data-aos="fade">
+      <strong>About Me</strong>
+      <p>
+        I received a BS in Computer Science with a Software Engineering focus from Case Western Reserve University in
+        2021. I'm currently back in school pursuing an MS in Finance from Middle Tennessee State University, where I
+        also work as a graduate assistant.
+        I am intrigued by what emerging technologies can do for our civilization -- whether it be automating
+        computer-based tasks, streamlining commercial platforms, embedding IoT-based systems, or generating insights
+        from quantitative data, technology has a substantial
+        reach into the corners of every industry. My goal is to be part of this movement into the future.
+      </p>
+    </div>
+    <!--youtube video-->
+    <div class="intro-video" data-aos="fade-up">
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+    <ul class="links">
+      <li><a href=”https://github.com/yagmur2”>Github</a></li>
+    </ul>
+  </section>
+
+  <!--contact page-->
+  <section id="contact">
+    <div class="header">
       <ul class="links">
-        <li><a href=”https://github.com/yagmur2”>Github</a></li>
         <li><a href="https://linkedin.com/arthur-y-eff">LinkedIn</a></li>
+        </h4>
       </ul>
     </div>
-    
-
-  </div>
--->
+    <!--form-->
+    <form data-aos="fade-up">
+      <!--full name-->
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <!--email-->
+      <input type="email" name="email" placeholder="Example@gmail.com" required>
+      <!--write something-->
+      <textarea name="message" placeholder="Write Something...." required></textarea>
+      <!--send btn-->
+      <input type="submit" value="Send">
+    </form>
+  </section>
 
 </body>
 

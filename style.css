@@ -107,6 +107,7 @@ a {
   z-index: 1;
 }
 
+/* splash page styling */
 #main::before {
   content: '';
   position: absolute;
@@ -115,7 +116,7 @@ a {
   left: -20%;
   top: -23%;
   transform: rotate(-10deg);
- /* background: linear-gradient(45deg, rgb(19, 19, 19) -10%, #141516);*/
+  /* background: linear-gradient(45deg, rgb(19, 19, 19) -10%, #141516);*/
   z-index: -1;
 }
 
@@ -187,6 +188,7 @@ a {
 
 .profile-picture img {
   border-radius: 50%;
+  rotate: -15deg;
   scale: .75;
   object-fit: contain;
 }
@@ -204,4 +206,102 @@ a {
   height: 100%;
   object-fit: contain;
   object-position: top;
+}
+
+/*Skills page styling*/
+#skills {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto auto 50px auto;
+}
+
+.skills-text {
+  width: 400px;
+}
+
+.skill-heading span {
+  color: #416cdf;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.skill-heading h2 {
+  color: #ffffff;
+  font-size: 3.3rem;
+  margin: 0px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.s-box-container {
+  margin-top: 30px;
+}
+
+.skill-box {
+  display: flex;
+  margin: 25px 0px;
+}
+
+.s-box-icon {
+  margin-right: 12px;
+}
+
+.s-box-icon i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f011;
+  font-size: 1.1rem;
+}
+
+.skill-box strong {
+  color: #ffffff;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.skill-box p {
+  color: #8a94a783;
+  font-size: 0.9rem;
+}
+
+.fa-java {
+  color: #e06061;
+}
+
+.fa-database {
+  color: #5d85f3;
+}
+
+.fa-python {
+  color: #f9ca31;
+}
+
+.progress-line {
+  position: relative;
+  height: 5px;
+  width: 100%;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+    0px 1px rgba(54, 54, 54, 0.8);
+}
+
+.skill-img {
+  width: 600px;
+  height: 600px;
+}
+
+.skill-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
