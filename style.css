@@ -305,3 +305,175 @@ a {
   height: 100%;
   object-fit: contain;
 }
+
+/*"About me" page styling*/
+#introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  max-width: 80%;
+  border-top: 1px solid #292b32;
+  padding: 5px 0px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #292b32;
+  margin: 5px auto;
+  background-image: url(../images/bg.png);
+  background-size: 950px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro-heading {
+  width: 60%;
+}
+
+.intro-heading strong {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.intro-heading p {
+  color: #8a94a763;
+}
+
+.fa-github {
+  scale: 3;
+  padding-bottom: 50px;
+  color: black;
+}
+
+/*
+.intro-video{
+  margin-top: 50px;
+}
+.intro-video iframe{
+  width:712px;
+  height: 400px;
+}
+*/
+
+#get-in-touch {
+  width: 90%;
+  height: 100px;
+  background-color: #15181d;
+  display: flex;
+  margin: 60px auto;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../images/bg-2.png);
+  background-position: top right;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+#get-in-touch span {
+  color: #e4e4e4;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+#get-in-touch a {
+  color: #ffffff;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #2788e2 20%, #3b4eb8);
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #373a412d;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  height: 150px;
+}
+
+#contact form input[type="submit"] {
+  height: 45px;
+  background: linear-gradient(90deg, #2065cc 20%, #3b58b8);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #14151610;
+  padding: 10px;
+  margin-top: 50px;
+  border-top: 1px solid #272729;
+}
+
+.footerbar {
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #292b3252;
+  margin: 5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.footer-social a:hover {
+  background-color: #2993f7;
+  transition: all ease 0.5s;
+}
+
+::selection {
+  color: #e4e4e4;
+  background-color: #416cdf;
+}
+
+#services,
+#introduction,
+#skills {
+  padding-top: 60px;
+}
