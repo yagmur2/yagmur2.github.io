@@ -40,7 +40,7 @@ body {
   justify-content: center;
 }
 
-.header{ 
+.header {
   align-items: center;
   justify-content: center;
 }
@@ -52,7 +52,7 @@ body {
 .links {
   list-style: none;
   padding-left: 0px;
-  font-size: 18px;  
+  font-size: 18px;
   font-family: poppins;
 }
 
