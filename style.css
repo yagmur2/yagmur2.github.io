@@ -15,6 +15,7 @@
 
 body {
   background: linear-gradient(to bottom, #111111 0%, rgba(170, 221, 235, 1) 100%);
+  font-family: Roboto, sans-serif;
 }
 
 /* new code start */
@@ -283,27 +284,6 @@ a {
 
 .fa-python {
   color: #f9ca31;
-}
-
-.progress-line {
-  position: relative;
-  height: 5px;
-  width: 100%;
-  background-color: #1d1d1d;
-  border-radius: 10px;
-  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
-    0px 1px rgba(54, 54, 54, 0.8);
-}
-
-.skill-img {
-  width: 600px;
-  height: 600px;
-}
-
-.skill-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 /*"About me" page styling*/
