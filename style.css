@@ -65,18 +65,6 @@ a {
   padding: 20px;
 }
 
-/*
-.logo {
-  height: 33px;
-  z-index: 3;
-}
-
-.logo img {
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-*/
 .menu li a {
   color: #ffffffcc;
 }
@@ -456,4 +444,24 @@ footer {
 #introduction,
 #skills {
   padding-top: 60px;
+}
+
+/* mobile compatibility */
+@media (max-width:200px) {
+  .profile-picture {
+    width: 400px;
+    height: 400px;
+    right: 5%;
+    transform: translate(-5%, -50%);
+  }
+
+  .model-bg {
+    display: none;
+  }
+
+  .main-text{
+    left: 10%;
+    transform: translate(-10%);
+  }
+  
 }
