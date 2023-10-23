@@ -3,11 +3,6 @@
 
 body {
   background: linear-gradient(to bottom, #111111 0%, rgb(61, 61, 61) 100%);
-  font-family: Roboto, sans-serif;
-}
-
-/* new code start */
-.bio {
   font-family: poppins;
 }
 
@@ -15,7 +10,6 @@ ul {
   list-style: none;
   padding-left: 0px;
   font-size: 18px;
-  font-family: poppins;
 }
 
 a {
@@ -26,7 +20,6 @@ a {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: poppins;
 }
 
 .navigation {
@@ -77,6 +70,7 @@ a {
   transition: all ease 0.5s;
 }
 
+/* splash page styling */
 #main {
   width: 100%;
   height: 100vh;
@@ -85,7 +79,6 @@ a {
   z-index: 1;
 }
 
-/* splash page styling */
 #main::before {
   content: '';
   position: absolute;
