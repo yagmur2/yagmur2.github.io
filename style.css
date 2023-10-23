@@ -77,6 +77,9 @@ a {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background-image: url(img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #main::before {
@@ -261,6 +264,17 @@ a {
   color: #f9ca31;
 }
 
+.fa-git {
+  color:  #321602
+}
+
+.fa-file-excel {
+  color:forestgreen
+}
+
+.fa-edit {
+  color: #c9cd99
+}
 /*"About me" page styling*/
 #introduction {
   display: flex;
@@ -276,10 +290,6 @@ a {
   padding-bottom: 60px;
   border-bottom: 1px solid #292b32;
   margin: 5px auto;
-  background-image: url(../images/bg.png);
-  background-size: 950px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .intro-heading {
