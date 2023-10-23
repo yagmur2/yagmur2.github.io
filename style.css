@@ -143,22 +143,13 @@ a {
   margin-right: 20px;
 }
 
-.hire-me-btn {
-  background-color: #242830;
-}
-
-.hire-me-btn:hover {
-  background-color: #0f7ce2;
-  transition: all ease 0.3s;
-}
-
 .profile-picture {
-  width: 681px;
-  height: 1500px;
+  pointer-events:none;
+  float: right;
   position: absolute;
   top: 50%;
-  right: 7%;
-  transform: translate(-7%, -50%);
+  right: -145px;
+  transform: translate(3%, -50%);
 }
 
 .model-bg {
@@ -440,11 +431,10 @@ footer {
     background-size: 950px;
   }
   .profile-picture {
-    width: 590px;
-    height: 1800px;
-    right: 5%;
+    float:right;
+    right: -307px;
     position: absolute;
-    transform: translate(-5%, -50%);
+    top: 25%;
   }
 
   .profile-picture img {
