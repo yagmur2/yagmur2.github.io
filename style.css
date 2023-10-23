@@ -306,6 +306,37 @@ a {
 }
 
 /*contact form styling */
+#get-in-touch {
+  width: 90%;
+  height: 100px;
+  background-color: #15181d;
+  display: flex;
+  margin: 60px auto;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-position: top right;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+#get-in-touch span {
+  color: #e4e4e4;
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+
+#get-in-touch a {
+  color: #e4e4e4;
+  font-size: 1.3rem;
+  font-weight: 550;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #contact {
   width: 100%;
   display: flex;
