@@ -144,27 +144,12 @@ a {
 }
 
 .profile-picture {
-  pointer-events:none;
+  pointer-events: none;
   float: right;
   position: absolute;
   top: 50%;
   right: -145px;
   transform: translate(3%, -50%);
-}
-
-.model-bg {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 45%;
-  height: 100%;
-}
-
-.model-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: top;
 }
 
 /*Skills page styling*/
@@ -249,16 +234,17 @@ a {
 }
 
 .fa-git {
-  color:  #321602
+  color: #321602
 }
 
 .fa-file-excel {
-  color:forestgreen
+  color: forestgreen
 }
 
 .fa-edit {
   color: #c9cd99
 }
+
 /*"About me" page styling*/
 #introduction {
   display: flex;
@@ -427,11 +413,12 @@ footer {
 
 /* mobile compatibility */
 @media (max-width:1200px) {
-  #main{
+  #main {
     background-size: 950px;
   }
+
   .profile-picture {
-    float:right;
+    float: right;
     right: -307px;
     position: absolute;
     top: 25%;
