@@ -26,6 +26,7 @@ a {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: poppins;
 }
 
 .navigation {
@@ -112,6 +113,7 @@ a {
   text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.01);
   margin: 0px;
   line-height: 45px;
+  font-family: roboto;
 }
 
 .main-text p {
@@ -205,12 +207,13 @@ a {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: roboto;
 }
 
 .skill-heading h2 {
   color: #ffffff;
-  font-size: 3.3rem;
+  font-size: 1rem;
   margin: 0px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -252,6 +255,7 @@ a {
   font-size: 0.9rem;
 }
 
+/* skills icons */
 .fa-java {
   color: #e06061;
 }
@@ -290,9 +294,12 @@ a {
 }
 
 .intro-heading strong {
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 600;
+  color: #416cdf;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-family: roboto;
 }
 
 .intro-heading p {
@@ -567,10 +574,6 @@ footer {
     background-color: #111111;
   }
 
-  .model {
-    display: none;
-  }
-
   .main-text {
     left: 50%;
     transform: translate(-50%, -50%);
@@ -611,8 +614,13 @@ footer {
     width: 85%;
   }
 
+  .intro-heading strong,
+  .skill-heading span {
+    font-size: 1.25rem;
+  }
+
   .skill-heading h2 {
-    font-size: 2.2rem;
+    font-size: .75rem;
   }
 }
 
@@ -639,17 +647,15 @@ footer {
     width: 100%;
   }
 
-  .intro-heading strong {
-    font-size: 2rem;
-  }
-
   #get-in-touch {
     padding: 20px 10px;
     text-align: center;
+    font-size: 1rem;
   }
 
-  #get-in-touch span {
-    font-size: 1.1rem;
+  #get-in-touch span,
+  #get-in-touch a {
+    font-size: 1rem;
   }
 
   .footerbar {
