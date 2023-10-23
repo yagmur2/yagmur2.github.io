@@ -155,20 +155,22 @@ a {
 }
 
 .profile-picture {
-  width: 500px;
-  height: 500px;
+  width: 681px;
+  height: 1500px;
   position: absolute;
   top: 50%;
   right: 7%;
   transform: translate(-7%, -50%);
 }
 
+/*
 .profile-picture img {
   border-radius: 50%;
   rotate: -15deg;
   scale: .75;
   object-fit: contain;
 }
+*/
 
 .model-bg {
   position: absolute;
@@ -274,7 +276,7 @@ a {
   max-width: 80%;
   border-top: 1px solid #292b32;
   padding: 5px 0px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   border-bottom: 1px solid #292b32;
   margin: 5px auto;
   background-image: url(../images/bg.png);
@@ -284,7 +286,7 @@ a {
 }
 
 .intro-heading {
-  width: 60%;
+  width: 100%;
 }
 
 .intro-heading strong {
@@ -298,8 +300,8 @@ a {
 }
 
 .fa-github {
-  scale: 3;
-  padding-bottom: 50px;
+  scale: 2;
+  padding-bottom: 0px;
   color: black;
 }
 
@@ -402,9 +404,11 @@ footer {
 /* mobile compatibility */
 @media (max-width:1200px) {
   .profile-picture {
-    width: 400px;
-    height: 400px;
-    right: 5%;
+    scale: .5;
+    width: 600px;
+    height: 500px;
+    right: 0%;
+    position: absolute;
     transform: translate(-5%, -50%);
   }
 
@@ -607,6 +611,16 @@ footer {
 }
 
 @media(max-width:530px) {
+  
+  .profile-picture {
+    scale: .3;
+    width: 500px;
+    height: 1000px;
+    right: 0%;
+    position: absolute;
+    transform: translate(-5%, -50%);
+  }
+
   .skill-img {
     display: none;
   }
@@ -651,6 +665,14 @@ footer {
 }
 
 @media(max-width:300px) {
+  .profile-picture {
+    scale: .5;
+    width: 100px;
+    height: 1000px;
+    right: 0%;
+    position: absolute;
+    transform: translate(-5%, -50%);
+  }
   .navigation {
     padding: 30px 10px;
   }
