@@ -412,7 +412,7 @@ footer {
   }
 
   .profile-picture img {
-    scale:.5;
+    scale: .5;
   }
 
   .model-bg {
@@ -628,8 +628,9 @@ footer {
 
 @media(max-width:300px) {
   .profile-picture {
-    display:none;
+    display: none;
   }
+
   .navigation {
     padding: 30px 10px;
   }
