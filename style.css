@@ -302,7 +302,7 @@ a {
 .fa-github {
   scale: 2;
   padding-bottom: 0px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 /*contact form styling */
