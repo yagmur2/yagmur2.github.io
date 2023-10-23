@@ -1,20 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*Old css code */
-
-.links li {
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.links a:hover {
-  color: rgb(17, 17, 17);
-  transition: all ease 0.5s;
-}
-
 body {
-  background: linear-gradient(to bottom, #111111 0%, rgba(170, 221, 235, 1) 100%);
+  background: linear-gradient(to bottom, #111111 0%, rgb(61, 61, 61) 100%);
   font-family: Roboto, sans-serif;
 }
 
@@ -315,37 +303,7 @@ a {
   color: black;
 }
 
-#get-in-touch {
-  width: 90%;
-  height: 100px;
-  background-color: #15181d;
-  display: flex;
-  margin: 60px auto;
-  padding: 20px 40px;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url(../images/bg-2.png);
-  background-position: top right;
-  background-size: 400px;
-  background-repeat: no-repeat;
-}
-
-#get-in-touch span {
-  color: #e4e4e4;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-#get-in-touch a {
-  color: #ffffff;
-  width: 160px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, #2788e2 20%, #3b4eb8);
-}
-
+/*contact form styling */
 #contact {
   width: 100%;
   display: flex;
@@ -386,6 +344,7 @@ a {
   text-transform: uppercase;
 }
 
+/* footer styling */
 footer {
   display: flex;
   justify-content: space-around;
