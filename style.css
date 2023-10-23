@@ -315,16 +315,6 @@ a {
   color: black;
 }
 
-/*
-.intro-video{
-  margin-top: 50px;
-}
-.intro-video iframe{
-  width:712px;
-  height: 400px;
-}
-*/
-
 #get-in-touch {
   width: 90%;
   height: 100px;
@@ -440,14 +430,18 @@ footer {
   background-color: #416cdf;
 }
 
-#services,
 #introduction,
 #skills {
   padding-top: 60px;
 }
 
+.menu-icon,
+.menu-btn {
+  display: none;
+}
+
 /* mobile compatibility */
-@media (max-width:200px) {
+@media (max-width:1200px) {
   .profile-picture {
     width: 400px;
     height: 400px;
@@ -459,9 +453,246 @@ footer {
     display: none;
   }
 
-  .main-text{
+  .main-text {
     left: 10%;
-    transform: translate(-10%);
+    transform: translate(-10%, -50%);
   }
-  
+
+}
+
+@media(max-width:1000px) {
+  .navigation {
+    justify-content: space-between;
+    height: 65px;
+    padding: 35px 25px;
+  }
+
+  .navigation .menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    background-color: #111111;
+    border-bottom: 4px solid #1b1b1b;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navigation .menu li {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .navigation .menu li a {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 30px 20px;
+    border: 1px solid rgba(38, 38, 38, 0.03);
+  }
+
+  .navigation .menu li a:hover {
+    color: #ffffff;
+    background-color: #2065cc;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    position: relative;
+    user-select: none;
+    z-index: 2;
+  }
+
+  nav .menu-icon .nav-icon {
+    background-color: #ffffffcc;
+    display: block;
+    position: relative;
+    height: 2px;
+    transition: background 0.2s ease-out;
+    width: 25px;
+  }
+
+  nav .menu-icon .nav-icon:before,
+  nav .menu-icon .nav-icon:after {
+    background-color: #ffffffcc;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+  }
+
+  nav .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+
+  nav .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+
+  nav .menu-icon .nav-icon,
+  nav .menu-icon:checked~.menu-icon .nav-icon {
+    background-color: transparent;
+  }
+
+  nav .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+
+  nav .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  nav .menu-btn:checked~.menu {
+    display: block;
+  }
+
+  .menu::before {
+    position: absolute;
+    left: 0px;
+    top: -60px;
+    content: '';
+    width: 100%;
+    height: 60px;
+    background-color: #111111;
+  }
+
+  .model {
+    display: none;
+  }
+
+  .main-text {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #skills {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  .skills-text-section {
+    width: 400px;
+  }
+
+  .skill-img {
+    width: 40%;
+    height: 300px;
+  }
+
+  .skill-img img {
+    object-fit: cover;
+    object-position: left;
+  }
+
+}
+
+@media(max-width:900px) {
+  .intro-video iframe {
+    width: 700px;
+    height: 400px;
+  }
+
+  .services-box-container {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:800px) {
+  .intro-video {
+    width: 100%;
+  }
+
+  .intro-video iframe {
+    width: 100%;
+    height: 38vh;
+  }
+
+  .intro-heading {
+    width: 80%;
+  }
+}
+
+@media(max-width:620px) {
+  #contact form {
+    width: 90%;
+  }
+
+  .main-text {
+    width: 85%;
+  }
+
+  .skill-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .intro-video iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media(max-width:530px) {
+  .skill-img {
+    display: none;
+  }
+
+  .skills-text-section {
+    width: 85%;
+  }
+
+  .main-btns {
+    flex-direction: column;
+  }
+
+  .main-btns a {
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  .intro-heading {
+    width: 100%;
+  }
+
+  .intro-heading strong {
+    font-size: 2rem;
+  }
+
+  #get-in-touch {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  #get-in-touch span {
+    font-size: 1.1rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  .intro-video iframe {
+    height: auto;
+  }
+}
+
+@media(max-width:300px) {
+  .navigation {
+    padding: 30px 10px;
+  }
 }
